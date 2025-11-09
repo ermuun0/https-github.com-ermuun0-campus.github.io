@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Site Name</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="first_page">
-        <h2 id="title">Та</h2>
-        <div id="container">
-            <div class="button" id="ajil" onclick="href='ajil.html'">
-                <h5>Ажлын байр хайж байна уу?</h5>
-            </div>
-            <p>Эсвэл</p>
-            <div class="button" id="hun" onclick="hun.html">
-                <h5>Ажиллах хүн хайж байна уу?</h5>
-            </div>
-        </div>
-        
+
+  <!-- Hero banner -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Top talents with Leading companies</h1>
+      <p>Recruitment · PEO & EOR · Survey & Training · HR‑tech · Employer branding</p>
+      <div class="cta-buttons">
+        <a href="#jobs" class="btn btn-primary">Find Jobs</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
+      </div>
     </div>
-    <script src="js/scripts.js"></script>
-    
+  </header>
+
+  <!-- Services section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>What we do</h2>
+      <div class="service-grid">
+        <div class="service-card">Recruitment & Executive Search</div>
+        <div class="service-card">PEO & EOR</div>
+        <div class="service-card">Survey & Training</div>
+        <div class="service-card">HR‑tech & Employer Branding</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-number">220+</span>
+        <span class="stat-label">Clients</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">35,000+</span>
+        <span class="stat-label">Candidates</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">89.3%</span>
+        <span class="stat-label">Retention</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">92.1%</span>
+        <span class="stat-label">Satisfaction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs section -->
+  <section id="jobs" class="jobs">
+    <div class="container">
+      <h2>Latest Jobs</h2>
+      <!-- here you can add job cards or links -->
+      <div class="job-grid">
+        <!-- Repeat job‑card divs -->
+        <div class="job-card">
+          <h3>Position Title</h3>
+          <p>Location · Full-time</p>
+          <a href="#">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Your Site Name. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
