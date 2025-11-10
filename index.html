@@ -88,7 +88,8 @@
     <h3 class="text-2xl font-bold text-blue-600 text-center mb-8">🎯 Ажил хайх</h3>
     <form class="max-w-xl mx-auto bg-gray-50 p-8 rounded-2xl shadow-md space-y-6">
       <div>
-        <img src="img/profile_img.webp" alt="" width="100px" height="100px" style="margin-left: 200px;">
+        <img id="myImage" src="img/profile_img.webp" alt="" width="100px" height="100px" style="margin-left: 200px; cursor: pointer;">
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
       </div>
       <div>
         <label class="block text-left font-semibold mb-2">Овог, нэр</label>
@@ -165,5 +166,22 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
+    <script>
+      const img = document.getElementById("myImage");
+      const fileInput = document.getElementById("fileInput");
+  
+      // when user taps the image → open phone gallery
+      img.addEventListener("click", () => {
+        fileInput.click();
+      });
+  
+      // when user picks an image → show it
+      fileInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) {
+          img.src = URL.createObjectURL(file);
+        }
+      });
+    </script>
 </body>
 </html>
